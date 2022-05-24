@@ -1,7 +1,766 @@
-#site__header {
-    color: red
+.header-footer-group .header-titles {
+    text-align: center;
+    margin: 46px 0 12px;
 }
 
-#site__header p {
+.page-banner.no-image {
+    min-height: 176px;
+}
+
+.page-banner.no-image h1.split.page-title {
+    margin: 65px 0;
+    color: #23a569;
+}
+
+header#site-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+}
+
+.menu_main_mobile .menu-main-menuen-container ul {
+    list-style: none;
+    margin-top: 32px;
+    padding: 0;
+}
+
+.menu_main_mobile .menu-main-menuen-container ul li.menu-item {
+    font-family: "Gotham-Book";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.89375px;
+    margin-bottom: 67px;
+}
+
+.menu_main_mobile .menu-main-menuen-container ul li.menu-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.widget.widget_nav_menu ul.sub-menu {
+    display: none;
+}
+
+header#site-header .nav_menu_main {
+    display: flex;
+    justify-content: center;
+}
+
+header#site-header .polylang-warpper {
+    display: flex;
+    align-content: center;
+    margin-right: 29px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.head-polylang {
+    position: absolute;
+    top: 75px;
+    width: 127px;
+    padding: 27px 20px;
+    left: -10px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+li.lang-item a {
+    font-family: "Gotham-Book";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.89375px;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+li.lang-item a:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #23a569;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 1s all;
+}
+
+li.lang-item a:hover:after {
+    width: 100%;
+}
+
+li.lang-item {
+    margin-bottom: 22px;
+}
+
+li.lang-item:last-child {
+    margin-bottom: 0px;
+}
+
+header#site-header .polylang-icon {
+    display: flex;
+    align-items: center;
+}
+
+header#site-header .head-polylang ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li {
+    margin: 0 31px;
+    font-family: "Gotham-Book";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.89375px;
+    color: #000;
+}
+
+.widget.widget_nav_menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widget.widget_nav_menu ul li.menu-item::after {
+    content: "/";
+    color: #23a569;
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.copy_right .textwidget p a {
+    color: #23a569;
+    font-family: "Gotham-Book";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.34285715px;
+}
+
+.textwidget p {
+    color: #23a569;
+    font-family: "Gotham-Book";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.34285715px;
+}
+
+.footer-bottom {
+    margin: 15px 0;
+}
+
+.widget.widget_nav_menu ul li.menu-item:last-child::after {
+    content: none;
+}
+
+.footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy_right .textwidget {
+    display: flex;
+    align-items: center;
+}
+
+.copy_right .textwidget figure.wp-block-image.size-full {
+    margin-left: 22px;
+    margin-bottom: 0;
+}
+
+.copy_right p {
+    color: #23a569;
+    font-family: "Gotham-Book";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.34285715px;
+}
+
+a.social-follow-button {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #23a569;
+    border-radius: 9px;
+    align-items: center;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.socials.left {
+    display: flex;
+}
+
+.copy_right .footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy_right .footer-widgets .textwidget p {
+    margin-bottom: 0;
+}
+
+a.social-follow-button:hover,
+a.social-follow-button:active,
+a.social-follow-button:focus {
+    background-color: #23a569;
+}
+
+a.social-follow-button:hover img,
+a.social-follow-button:active img,
+a.social-follow-button:focus img {
+    filter: brightness(0) invert(1);
+}
+
+.header-titles .custom-logo-link img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    max-width: 331px;
+    height: auto;
+}
+
+.header-down .header-titles .custom-logo-link img {
+    max-width: 255px;
+    height: auto;
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li a {
+    color: #000;
+    font-family: "Gotham-Book";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.89375px;
+    position: relative;
+    text-decoration: none;
+}
+
+.header-down .header-footer-group .header-titles {
+    text-align: center;
+    margin: 46px 0 4px;
+}
+
+.split>span {
+    display: block;
+    overflow: hidden;
+}
+
+.split span span {
+    display: block;
+    -webkit-transform: translateY(104%);
+    transform: translateY(104%);
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li a:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #23a569;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 1s all;
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li a:hover:after {
+    width: 100%;
+}
+
+header#site-header .nav_menu_main {
+    display: none;
+}
+
+.menu-wrapper.section-inner {
+    display: block;
+}
+
+.menu-wrapper.section-inner {
+    background: #fff;
+    display: none;
+    opacity: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    bottom: 0;
+    left: -99999rem;
+    right: 99999rem;
+    top: 0;
+    transition: opacity 0.25s ease-in, left 0s 0.25s, right 0s 0.25s;
+    z-index: 99;
+}
+
+.page-banner {
+    min-height: 508px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.icon_language {
+    display: block;
+}
+
+.header-down .nav_menu_main .menu-main-menuen-container ul.menu {
+    margin-bottom: 12px;
+}
+
+.header-down .header-titles-wrapper {
+    padding-bottom: 0px;
+}
+
+.container_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.container_title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1.split.page-title {
+    margin: auto;
+    text-align: center;
+}
+
+.header-titles-wrapper {
+    padding-bottom: 12px;
+}
+
+.menu-wrapper.section-inner {
+    left: 100vw;
+    opacity: 1;
+    right: 0;
+    transition: all .5s;
+    display: block;
+    background: #fff;
+    top: 0;
+    width: 100%;
+}
+
+.menu-wrapper.section-inner.active {
+    left: 0;
+    opacity: 1;
+    right: 0;
+    transition: opacity 0.25s ease-out;
+}
+
+.menu-wrapper.section-inner.active {
+    left: 0;
+    transition: all .5s;
+}
+
+.icon_language {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-footer-group .menu-btn.open .menu-btn__burger {
+    -webkit-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header-footer-group .menu-btn__burger,
+.header-footer-group .menu-btn__burger::before,
+.header-footer-group .menu-btn__burger::after {
+    width: 19px;
+    height: 1px;
+    background-color: #000;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.header-footer-group .menu-btn {
+    width: 19px;
+    height: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.header-footer-group .menu-btn__burger::before,
+.header-footer-group .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+}
+
+.header-footer-group .menu-btn__burger::before {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.header-footer-group .menu-btn__burger::after {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+}
+
+.icon_menu_close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.header-footer-group .menu-btn.open .menu-btn__burger::before {
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+    -ms-transform: rotate(45deg) translate(35px, -35px);
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.header-footer-group .menu-btn.open .menu-btn__burger::after {
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+    -ms-transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.header-footer-group .menu-btn__burger,
+.header-footer-group .menu-btn__burger::before,
+.header-footer-group .menu-btn__burger::after {
+    width: 19px;
+    height: 1px;
+    background-color: #000;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+ul.sub-menu {
+    position: absolute;
+    background: #fff;
+    border-radius: 22px;
+    padding: 23px;
+    display: none;
+    max-height: 276px;
+    overflow-y: auto;
+    max-height: 276px;
+    overflow-y: auto;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li:hover ul.sub-menu {
+    display: block;
+}
+
+.menu-item-has-children:hover::before {
+    display: block;
+}
+
+.menu-item-has-children:before {
+    content: "";
+    position: absolute;
+    content: "";
+    width: 100%;
+    display: none;
+    height: 100px;
+    top: 10px;
+    left: 0;
+}
+
+.menu-item-has-children {
+    position: relative
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li ul.sub-menu li {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.nav_menu_main .menu-main-menuen-container ul.menu li ul.sub-menu li:last-child {
+    margin-bottom: 0
+}
+
+.icon_menu_close {
+    display: block;
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+  } */
+
+.sub-menu::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #23a569;
+    border-radius: 2px;
+}
+
+.columns_newsletters input[type="submit"] {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.field_email {
+    position: relative;
+}
+
+span.wpcf7-spinner {
+    display: none;
+}
+
+.field_email span input {
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    background: transparent;
+}
+
+.columns_newsletters {
+    background: #23A569;
+    border-radius: 27px;
+    padding: 50px 0;
+    margin-top: 162px;
+    margin-bottom: 80px;
+}
+
+.container_newsletters .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field_email span input::placeholder {
+    color: #ffffff;
+    font-family: "Gotham-Book";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.51428574px;
+}
+
+.field_email input[type="submit"] {
+    background: transparent;
+}
+
+.field_email input[type="submit"]:hover,
+.field_email input[type="submit"]:active,
+.field_email input[type="submit"]:focus {
+    background: transparent;
+}
+
+.columns_newsletters .field label {
+    color: #ffffff;
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+}
+
+.container_newsletters {
+    max-width: 557px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+h2.title_newsletters {
+    text-align: center;
+    color: #fff;
+}
+
+@media(min-width:1024px) {
+    header#site-header .nav_menu_main {
+        display: flex;
+    }
+    .menu-wrapper.section-inner {
+        display: none;
+    }
+    .icon_language {
+        display: none;
+    }
+    .icon_menu_close {
+        display: none;
+    }
+}
+
+@media(max-width:1100px) {
+    .nav_menu_main .menu-main-menuen-container ul.menu li {
+        margin: 0 25px;
+    }
+}
+
+@media(max-width:1024px) {
+    .menu-wrapper.section-inner {
+        top: 97px;
+        z-index: 999;
+    }
+    .head-polylang {
+        position: absolute;
+        top: 75px;
+        width: 127px;
+        padding: 24px 23px;
+        left: -3px;
+        background: #fff;
+        border-radius: 20px;
+    }
+    html.menu-open {
+        overflow: hidden;
+    }
+    .header-down .menu-wrapper.section-inner {
+        top: 59px;
+        z-index: 999;
+    }
+    .header-titles .custom-logo-link img {
+        max-width: 203px;
+    }
+    .header-down .header-titles .custom-logo-link img {
+        max-width: 161px;
+    }
+    .header-titles-wrapper {
+        padding-bottom: 0px;
+    }
+    .header-footer-group .header-titles {
+        text-align: center;
+        margin: 29px 0 29px;
+    }
+    .header-down .header-footer-group .header-titles {
+        text-align: center;
+        margin: 20px 0 20px;
+    }
+    header#site-header {
+        min-height: 97px;
+    }
+    .header-down header#site-header {
+        min-height: 59px;
+    }
+    .header-footer-group .header-titles {
+        text-align: center;
+        margin: 36.5px 0;
+    }
+    header#site-header .polylang-warpper {
+        display: flex;
+        align-content: center;
+        margin-right: 30px;
+        margin-left: 30px;
+        position: relative;
+    }
+    .page-banner {
+        min-height: 337px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .footer-widgets .widget.widget_nav_menu {
+        display: none;
+    }
+    .socials.left {
+        display: flex;
+        margin: 16px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-widgets {
+        justify-content: center;
+    }
+    header#site-header .polylang-warpper {
+        display: flex;
+        align-content: center;
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+    }
+}
+
+@media(max-width:639px) {
+    .socials.left a.social-follow-button {
+        margin-bottom: 22px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .copy_right .footer-widgets {
+        flex-direction: column-reverse;
+    }
+    .copy_right .footer-widgets .textwidget p {
+        margin-bottom: 9px;
+        margin-top: 9px;
+    }
+    .page-banner {
+        min-height: 243px;
+    }
+}
+
+@media(max-width:350px) {
+    .socials.left a.social-follow-button {
+        margin-bottom: 22px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    .copy_right .textwidget figure.wp-block-image.size-full {
+        margin-left: 5px;
+    }
+}
+
+@media(max-width:300px) {
+    .copy_right p {
+        color: #23a569;
+        font-family: "Gotham-Book";
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+    }
+    .socials.left a.social-follow-button {
+        margin-bottom: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
