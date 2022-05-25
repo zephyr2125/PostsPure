@@ -24,7 +24,7 @@ jobs:
         run: npm install --global gatsby-cli
       
       - name: Build
-        run: gatsby build
+        run: gatsby build --prefix-paths
         env:
           REACT_APP_API_URL_GRAPHQL: "https://dev.huanth.xyz/wp_postspure/graphql"
       
