@@ -10,9 +10,9 @@
 
 ## 🚀 Quick start
 
-Create new project: <code> gatsby new gatsby-wordpress https://github.com/zephyr2125/gatsby-wordpress </code> <br>
+Create new project: <code> git clone https://github.com/zephyr2125/PostsPure </code> <br>
 Then: <br>
-<code> cd gatsby-wordpress </code><br>
+<code> cd PostsPure </code><br>
 <code> gatsby develop </code><br>
 
 Build: <br>
