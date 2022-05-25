@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Posts Pure
+  Posts Pure Project Demo
 </h1>
 
 ## 🚀 Quick start
