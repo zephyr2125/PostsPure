@@ -25,6 +25,8 @@ jobs:
       
       - name: Build
         run: gatsby build
+        env:
+          REACT_APP_API_URL_GRAPHQL: "https://dev.huanth.xyz/wp_postspure/graphql"
       
       - name: Verify build
         run: ls -la public
