@@ -46,5 +46,6 @@ module.exports = {
         icon: `src/assets/images/favicon.png`,
       },
     },
-  ]
+  ],
+  pathPrefix: `/fe_postspure`,
 }
