@@ -1,8 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client/react";
 import { Link } from "gatsby";
-import $ from "jquery";
-import CircleType from 'circletype';
+import CircleType from "circletype";
 
 import { GET_HOME_DATA_ABOUT } from "./homeAPI";
 
@@ -17,13 +16,10 @@ const Heading = (props) => {
         }
     });
  
-    if ($('.circular-text .text').length) {
-        const text = document.querySelector(".circular-text .text")
-        const rotate = new CircleType(text).radius(65)
-        window.addEventListener("scroll", function() {
-            text.style.transform = `rotate(${window.scrollY * 0.15}deg)`
-        });
-    }
+    
+       
+    // const circleType = new CircleType(document.querySelector(".circular-text .text"))
+    // circleType.radius(65)
 
     return (
         <>
@@ -48,7 +44,7 @@ const Heading = (props) => {
                             />
                             <div className="text_spin circular-text">
                                 <p className="text">
-                                    {data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.textSpin}
+                                    {/* {data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.textSpin} */}
                                 </p>
                             </div>
                         </div>
