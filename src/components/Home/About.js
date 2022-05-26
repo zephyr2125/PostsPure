@@ -16,25 +16,25 @@ const Heading = (props) => {
 
     return (
         <>
-            <section class="home-about-us container">
-                <div class="container_home-about">
-                    <div class="container_left">
-                        <h2 class="split off">{data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.heading}</h2>
+            <section className="home-about-us container">
+                <div className="container_home-about">
+                    <div className="container_left">
+                        <h2 className="split off">{data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.heading}</h2>
                         <p dangerouslySetInnerHTML={{ __html: data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.content }} />
-                        <a class="button"
+                        <a className="button"
                             href={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.url}
                             target={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.target} >
                             {data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.title}
                         </a>
                     </div>
-                    <div class="container_right">
-                        <div class="image_right">
+                    <div className="container_right">
+                        <div className="image_right">
                             <img
                                 src={data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.image.sourceUrl}
                                 alt={data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.image.sourceUrl}
                             />
-                            <div class="text_spin circular-text">
-                                <p class="text">
+                            <div className="text_spin circular-text">
+                                <p className="text">
                                     {data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.textSpin}
                                 </p>
                             </div>
