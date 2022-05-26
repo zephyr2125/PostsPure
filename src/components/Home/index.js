@@ -1,30 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Banner from "../Banner";
-import { useQuery } from "@apollo/client/react";
-
-import { GET_HOME_DATA_HEADING } from "./homeAPI";
+import { Context } from "../../context";
 
 import Heading from "./Heading";
 import About from "./About";
+import Fusing from "./Fusing";
 
 const Home = () => {
     const idPage = "cG9zdDoxODc=";
-    const language = "EN";
-
-    // const { data } = useQuery(GET_HOME_DATA_HEADING,{
-    //     variables:{
-    //         id: idPage,
-    //         language: language
-    //     }
-
-    // });
-
-    
+    const { language } = useContext(Context)
 
     return ( 
         <>
             <Heading idPage={idPage} language={language} />
             <About idPage={idPage} language={language} />
+            <Fusing idPage={idPage} language={language} />
         </>
      );
 }

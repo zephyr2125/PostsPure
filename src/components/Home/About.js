@@ -1,5 +1,8 @@
 import React from "react";
 import { useQuery } from "@apollo/client/react";
+import { Link } from "gatsby";
+import $ from "jquery";
+import CircleType from 'circletype';
 
 import { GET_HOME_DATA_ABOUT } from "./homeAPI";
 
@@ -13,6 +16,14 @@ const Heading = (props) => {
             language: language
         }
     });
+ 
+    if ($('.circular-text .text').length) {
+        const text = document.querySelector(".circular-text .text")
+        const rotate = new CircleType(text).radius(65)
+        window.addEventListener("scroll", function() {
+            text.style.transform = `rotate(${window.scrollY * 0.15}deg)`
+        });
+    }
 
     return (
         <>
@@ -21,11 +32,13 @@ const Heading = (props) => {
                     <div className="container_left">
                         <h2 className="split off">{data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.heading}</h2>
                         <p dangerouslySetInnerHTML={{ __html: data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.content }} />
-                        <a className="button"
-                            href={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.url}
-                            target={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.target} >
+                        <Link 
+                            to={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.url}
+                            className="button"
+                            target={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.target}
+                        >
                             {data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.title}
-                        </a>
+                        </Link>
                     </div>
                     <div className="container_right">
                         <div className="image_right">
