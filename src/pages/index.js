@@ -1,6 +1,8 @@
 import React from "react";
 import Seo from "../components/seo";
 
+import Home from "../components/Home";
+
 const IndexPage = () => {
 
 
@@ -8,7 +10,7 @@ const IndexPage = () => {
     <div className="home__container">
       <Seo title="Homepage" />
       <div className="home__wrapper">
-        <div>Home</div>
+        <Home />
       </div>
     </div>
   )

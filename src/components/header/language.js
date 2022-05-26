@@ -6,7 +6,6 @@ import { GET_LANGUAGE } from "./headerAPI";
 const Language = () => {
 
     const { data } = useQuery(GET_LANGUAGE);
-    console.log(data);
 
     return (
         <>
