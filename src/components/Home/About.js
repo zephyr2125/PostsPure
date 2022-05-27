@@ -1,5 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client/react";
+import { Link } from "gatsby";
+import CircleType from "circletype";
 
 import { GET_HOME_DATA_ABOUT } from "./homeAPI";
 
@@ -13,6 +15,11 @@ const Heading = (props) => {
             language: language
         }
     });
+ 
+    
+       
+    // const circleType = new CircleType(document.querySelector(".circular-text .text"))
+    // circleType.radius(65)
 
     return (
         <>
@@ -21,11 +28,13 @@ const Heading = (props) => {
                     <div className="container_left">
                         <h2 className="split off">{data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.heading}</h2>
                         <p dangerouslySetInnerHTML={{ __html: data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.content }} />
-                        <a className="button"
-                            href={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.url}
-                            target={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.target} >
+                        <Link 
+                            to={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.url}
+                            className="button"
+                            target={data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.target}
+                        >
                             {data?.page.translation.homeAboutUs.sectionAboutUs.groupContent.button.title}
-                        </a>
+                        </Link>
                     </div>
                     <div className="container_right">
                         <div className="image_right">
@@ -35,7 +44,7 @@ const Heading = (props) => {
                             />
                             <div className="text_spin circular-text">
                                 <p className="text">
-                                    {data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.textSpin}
+                                    {/* {data?.page.translation.homeAboutUs.sectionAboutUs.groupImages.textSpin} */}
                                 </p>
                             </div>
                         </div>
