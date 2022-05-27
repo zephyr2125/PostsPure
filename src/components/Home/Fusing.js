@@ -15,8 +15,6 @@ const Heading = (props) => {
         }
     });
 
-    console.log(data);
-
     return (
         <>
             <section className="home-fusing container">
